@@ -1,0 +1,142 @@
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{enumitem} %%Enables control over enumerate and itemize environments
+\usepackage{setspace}
+\usepackage{amssymb, amsmath, mathrsfs} %%Math packages
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage{array}
+\usepackage{bibentry}
+\usepackage[round]{natbib} %%Or change 'round' to 'square' for square backers
+\setcitestyle{aysep={}}
+
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\usepackage{tipa}
+\newcommand{\camunda}[0]{C\={a}mu\d{n}\d{d}\={a}}
+\newcommand{\kavu}[0]{\textit{k\={a}v\^{u}}}
+\newcommand{\Kavu}[0]{K\={a}v\^{u}}
+
+
+
+\newcommand{\corner}[1]{\ulcorner#1\urcorner} %%Corner quotes
+\newcommand{\tuple}[1]{\langle#1\rangle} %%Angle brackets
+\newcommand{\set}[1]{\lbrace#1\rbrace} %%Set brackets
+\newcommand{\interpret}[1]{\llbracket#1\rrbracket} %%Double brackets
+%\DeclarePairedDelimiter\ceil{\lceil}{\rceil}    
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{10pt} % Some vertical space between the title and author name
+
+{\@author} % Author name
+\\\@date % Date
+
+\vspace{30pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Theyyam}} % Subtitle
+
+\author{\textit{Kerelian Adventures}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+\thispagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+
+\section{Definition}
+  \label{sec:Definition}
+
+Theyyam is practised in the northern Malabar region of south-west India consisting of districts in northern Kerala and southern Karnataka, and takes place in \textit{\kavu s}, or ``sacred groves'' containing a flat gathering space along with a central and subsidiary alters.
+
+Theyyam is a complex and elaborate ritual for having divinities descend on to the mundane world through human actors possessed by divine spirits in order to receive their religious services and merits.
+It predominantly involves theatrical performances and animal sacrifices in designated sacred groves called \textit{kavus} or temple sites in northern Kerala and southern Karnatika.
+Although Theyyam is practised in Hindu context, its tribal and shamanic elements are considered to date back to pre-historic traditions.
+Theyyam practitioners go into shamanic trance to get equated with spirits and play vital social roles such as healing and blessings in a given community hosting the ritual.
+
+\section{Description}%
+  \label{sec:Description}
+  
+The form of Theyyam (thirra) practised in the Panakkatan Malayan \Kavu\ located in Eranholi of Kannur district in Kerala begins with ritual offerings and blessings where live deities in their preliminary forms sanctify the space as well as those attending the ceremony.
+The deities then perform three velattams, invoking \camunda\ through drumming, dance, and anointing the different alters in the \kavu.
+
+forms, after which a new cast of dancers dressed in young palm leaves make offerings and receive garlands while the first deities watch from some ways away.
+After the dance is complete, preparations are made for the first sacrifice of a live rooster where \camunda\ presents herself, dancing while hiding her face before devouring a live rooster, drinking its blood.
+Having finished her meal of rooster and puffed rice, the possessed dancer crawls away in a trance, occasionally collapsing and writhing on the ground. 
+A new troop of drummers is called on, as another rooster sacrifice takes place before the final morning fire dance, circumambulating the kava.
+The crowd then disperses to reconvene in the afternoon for a final rooster sacrifice and ritual performances, finishing in the early evening.
+
+This years's Thiramahotsavam at Eranjoli, Chungam Sri Panakkadan Malayan Kav will be held on December 15, 16, 17, 18, 2022 1198 Scorpio 29, 30 Sagittarius 1, 2, Thursday, Friday, Saturday and Sunday
+
+
+\section{Program}%
+  \label{sec:Program}
+  
+\begin{itemize}
+  \item Evening of the 17th at 5pm
+  \begin{itemize}
+    \item Kuttishastappan's velattam\\
+      (three slow dancers in red)
+    \item Kandakarna's velattam\\
+      (four orange faced dancers)
+    \item Vesurimala's velattam\\
+      (coconut leaf hat, mask, and stilts)
+  \end{itemize}
+  \item Evening of the 17th at 11:30pm
+  \begin{itemize}
+    \item Karimchamundi's Kottipadal\\
+      (chicken sacrifice)
+  \end{itemize}
+  \item Morning of the 18th at 5am
+  \begin{itemize}
+    \item Gulykan Thira\\
+      (tall red coconut leaf hat dance)
+    \item Thira of Karimchamundi\\
+      (second chicken sacrifice)
+  \end{itemize}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vfill
+
+\bibliographystyle{Phil_Review} %%bib style found in bst folder, in bibtex folder, in texmf folder.
+\bibliography{Zotero} %%bib database found in bib folder, in bibtex folder
+
+
+\end{document}
